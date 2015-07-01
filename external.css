@@ -1,0 +1,21 @@
+h1{color:red;text-align:left;font-size:45px}
+h2{color:green;}
+h4{color:magenta;}
+p{font-family:verdana; font-size:16px; color: #C22C22; text-decoration: none;}
+body{background-color:#d2d2d2;margin-left:100px;margin-right:100px;margin-top:40px;}
+div{background-color:#d2d2d3;}
+caption{font-family:times;font-size:10px;}
+td{font-family:verdana;height:20px;}
+table{text-align:left;}
+legend{font-family:verdana;font-weight:bold;}
+td{font-family:verdana;font-weight:bold;}
+th{font-family:verdana;font-weight:bold;}
+input{text-align:center;font-family:verdana;font-style:italic;font-size:14px;}
+textarea{text-align:justify;font-family:verdana;font-style:italic; font-size:14px;}
+select{height:25px;width:200px;font-family:verdana;font-style:italic; font-size:14px;text-align:center;}
+label{font-style:italic;font-size:14px;text-align:center;}
+.btn1,.btn2,.btn3,.btn4{font-family:verdana;font-weight:bold; color: #C22C22; font-size:16px }
+ul
+{
+    list-style-type: none;
+}
