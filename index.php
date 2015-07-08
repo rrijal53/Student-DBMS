@@ -1,5 +1,11 @@
 <html>
 <head>
+<style>
+div.sidebar
+{
+	background-color:#a2a2a2;
+}
+</style>
 <link rel = "stylesheet" style = "text/css" href = "elements.css"/>	
 	<script src="jquery.min.js"></script>
 	<script src="my_js.js"></script>
@@ -42,6 +48,11 @@
 		
     </div>
 </div>
-<a href="session_attended.php" align="center" style="text-decoration:none;display:block;float:center;"><h3 >Assign session</h3></a>
+<div class="sidebar">
+<a href="session_attended.php" align="center" style="text-decoration:none;float:center;color:black"><h3  style="background-color:#7FB5DA;">Assign session</h3></a>
+<a href="table_students.php" align="center" style="text-decoration:none;display:block;float:center;color:black"><h3 style="background-color:#7DB5FA;">Students</h3></a>
+<a href="table_session.php" align="center" style="text-decoration:none;display:block;float:center;color:black;"><h3 style="background-color:#7FC5CA;">Sessions</h3></a>
+
+</div>
 </body>
 </html>

@@ -36,7 +36,7 @@ if (isset($_POST['submit']))
 {
 $stdname=$_POST['stdname'];
 $ppid=$_POST['ppid'];
-if(isset($stdname)&&isset($ppid))
+if(isset($stdname)&&isset($ppid)&&$stdname!="")
 {
 $con = mysqli_connect('localhost','root','','pipedrive');
 if (!$con) {

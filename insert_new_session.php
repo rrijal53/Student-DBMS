@@ -82,7 +82,7 @@ if (isset($_POST['submit']))
 		$tid2=$_POST['teacher2'];
 		$tid3=$_POST['teacher3'];
 		$tid4=$_POST['teacher4'];
-	if(isset($mcid)&&isset($location)&&isset($sdate)&&isset($edate)&&isset($ppc))
+	if(isset($mcid)&&isset($location)&&isset($sdate)&&isset($edate)&&isset($ppc)&&$mcid!=""&&$location!="")
 	{
 		
 		$con = mysqli_connect('localhost','root','','pipedrive');

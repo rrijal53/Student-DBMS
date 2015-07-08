@@ -38,6 +38,8 @@ if (isset($_POST['submit']))
 {
 $name=$_POST['classname'];
 $ageGroup=$_POST['ageGroup'];
+if(isset($name)&&isset($ageGroup))
+{
 $con = mysqli_connect('localhost','root','','pipedrive');
 if (!$con) {
     die('Could not connect: ' . mysqli_error($con));
@@ -48,7 +50,7 @@ $a=mysqli_query($con,$query);
 if($a)
 echo "NEW MASTERCLASS ".$name." ADDED FOR AGE GROUP".$ageGroup;
 }
-
+}
 
 
 ?>

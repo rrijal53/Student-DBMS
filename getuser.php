@@ -2,6 +2,10 @@
 <head>
 <style>
 legend{font-family:verdana;font-weight:bold;color:red}
+a{
+text-decoration:none;
+
+}
 table {
     width: 100%;
     border-collapse: collapse;
@@ -50,10 +54,13 @@ while($row = mysqli_fetch_array($result)) {
     echo "<td>" . $row['location'] . "</td>";
 	 echo "<td>" .$row['feedback'] . "</td>";
     echo "</tr>";
-}
-echo "</table>";
-mysqli_close($con);
+	
+	}
+	echo "<td><a href=\"edit_student.php?q=".$q."\"/>Edit</a>";
+	echo "<td><a href=\"delete_student.php?q=".$q."\"/>Delete</a>";
+	mysqli_close($con);
 ?>
+
 </fieldset>
 			
 </body>

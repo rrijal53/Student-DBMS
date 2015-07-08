@@ -36,7 +36,7 @@ if (isset($_POST['submit']))
 {
 $teachername=$_POST['teachername'];
 $ppid=$_POST['ppid'];
-if(isset($teachername)&&isset($ppid))
+if(isset($teachername)&&isset($ppid)&&$teachername!="")
 {
 $con = mysqli_connect('localhost','root','','pipedrive');
 if (!$con) {

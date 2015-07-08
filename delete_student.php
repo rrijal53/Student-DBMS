@@ -1,18 +1,15 @@
-<?php
-$sid=$_POST['stdName'];
-$crid=$_POST['chkbox'];
+
+<?php 
 $con = mysqli_connect('localhost','root','','pipedrive');
 if (!$con) {
     die('Could not connect: ' . mysqli_error($con));
 }
-
 mysqli_select_db($con,"pipedrive");
-for($i=0;$i<sizeof($crid);$i++)
-{
-$query="INSERT INTO classattended (sid,crid) values(".$sid.",".$crid[$i].")";
+$query="DELETE FROM student where sid=".$_GET['q'];
 $a=mysqli_query($con,$query);
-}
 if($a)
-echo "successfully inserted";
-}
+echo " Deleted";
+ header("Location:table_students.php");
+	
+
 ?>
