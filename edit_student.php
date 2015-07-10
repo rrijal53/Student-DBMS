@@ -13,7 +13,8 @@ while($row = mysqli_fetch_array($result))
 {
 		$sname=$row['student_name'];
 		$ppid=$row['pipedrive_id'];		
-}	
+		}	
+
 
 ?>
 <html>
@@ -30,6 +31,7 @@ while($row = mysqli_fetch_array($result))
 			<legend>Enter Details of Student</legend>
 				<table><tr><td>Name:</td><td><input type="text" name="stdName" value="<?php echo $sname;?>"></td></tr>
 				<tr><td>PipeDrive ID:</td><td><input type="number" name="ppid" value="<?php echo $ppid;?>"></td></tr>
+				<tr><td><input type="submit" name="submit"></td></tr>
 			</fieldset>
 	</body>
 </html>
